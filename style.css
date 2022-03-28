@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    text-size-adjust: none;
+}
+body{
+    overflow-x:hidden;
+}
+
+.netflixbg{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) ,70%, rgba(0,0,0,0.95)),linear-gradient(to top, rgba(0,0,0,0) ,70%, rgba(0,0,0,0.95)), url("IMAGES/netflixbg.jpg");
+    height: 800px;
+    width: 100%;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+.header-container{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    .header{
+        position: relative;
+        display: flex;
+        width: 1400px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 20px;
+    }
+        .logo img{
+            position: relative;
+            height: 85px;
+        }
+        .logo{
+            height: 85px;
+            flex-grow: 1;
+        }
+        .language select{
+            position: relative;
+            padding: 10px 10px;
+            margin: 0px 10px;
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+            font-weight: bolder;
+
+        }
+        .signin button{
+            position: relative;
+            padding: 9px 20px;
+            margin: 0px 10px;
+            background-color: #E50914;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+
+.content-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .content{
+        margin: 50px 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 1100px;
+    }
+        h1{
+            margin: 20px 200px ; 
+            font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            
+        }
+        h2{ 
+            margin: 10px 80px;
+            font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 26px;
+            font-weight: 400;
+            color: white;
+        }
+        h4{
+            position: relative;
+            margin: 20px 80px;
+            font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: white;
+
+        }
+        .email{
+            position: relative;
+            margin: 20px 60px;
+            display: flex;
+            justify-content: center;
+        }
+            .email input{
+                height: 50px;
+                width: 580px;
+                padding-left:10px;
+                font-size: 16px;
+                font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            .email div{
+                background-color: #E50914;
+                color: aliceblue;
+                width: 120px;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 50px;
+                font-weight: 500;
+
+            }
+.email div:hover , .signin button:hover{
+    cursor: pointer;
+    background-color: #ff0612;
+}
+.language select:hover{
+    cursor: pointer;
+    background-color: #222222;
+}
+.storycard{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    border-top: 10px solid #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+    .storycard-text-container{
+        border: 2px solid ;
+        height: 300px;
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .storycard-bigones{
+        margin: 20px 200px ; 
+        font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 600;
+        width: 700px;
+        
+    }
+    .storycard-smallones{
+        margin: 20px 200px ; 
+        font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        width: 700px;
+    }
+
+.faq-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-top: 10px solid #222222;
+    height: 700px;
+    width: 100%;
+}
+    .faq{
+        display: flex;
+        align-self: center;
+        height: 600px;
+        width: 900px;
+        flex-direction: column;
+    }
+        .faq-text{
+        font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+        width: 900px;
+        margin-bottom: 50px;
+        height: max-content;
+        }
+
+        .faq-btn{
+            box-sizing: border-box;
+            margin: 10px 90px 0px 90px;
+            width: 710px;
+            padding: 20px 10px;
+            background-color: #1D1D1D;
+            color: white;
+            font-size: 20px;
+            font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        }
+
+        .faq:hover{
+            cursor: pointer;
+        }
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-top: 10px solid #222222;
+    height: 400px;
+    width: 100%;
+}   
+    .footer-container{
+        height:300px;
+        width: 800px;
+    }
+    .questions{
+        color: #6e6d6d;
+        font-size: 15px;
+        font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 20px;
+
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+        .grid-text{
+            color: #6e6d6d;
+            font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            width: 180px;
+            margin: 10px 10px 10px 0px;
+        }
+    .language-2 select{
+        position: relative;
+        padding: 10px 10px;
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 2px;
+        font-weight: bolder;
+        filter: brightness(50%);
+
+    }
+    .copyright{
+        color: #6e6d6d;
+        font-size: 15px;
+        padding-top: 30px;
+        font-family:"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
